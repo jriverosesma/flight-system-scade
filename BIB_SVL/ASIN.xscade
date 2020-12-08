@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" external="imported" name="ASIN">
+			<inputs>
+				<Variable name="E1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_2D9/2000607959/1649/3950E58C/6096"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="S1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_2DA/2000607959/1649/3950E58C/6E08"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator commentsToC="true" oid="hp_526/2004647621/68B/34BE0687/607C" symbolFile="ASIN.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6">
+					<comment>produced by ScadetoSCADE6 Revision: 1.69 </comment>
+				</ed:Operator>
+				<kcg:Pragma>
+					doc produced by ScadetoSCADE6 Revision: 1.69 
+				</kcg:Pragma>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

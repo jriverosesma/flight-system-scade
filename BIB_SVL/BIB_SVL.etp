@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="33" defaultConfiguration="2">
+	<props>
+		<Prop id="3" name="@STUDIO:PRODUCT">
+			<value>SC</value>
+		</Prop>
+		<Prop id="4" name="@GENERATOR:GENERATOR">
+			<value>C QUAL65</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="5" name="@STUDIO:DESCRIPTION">
+			<value>produced by ScadetoSCADE6 Revision: 1.69 </value>
+		</Prop>
+		<Prop id="15" name="@STUDIO:TOOLCONF">
+			<value>Checker</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="16" name="@STUDIO:TOOLCONF">
+			<value>Code Generator - Simulator</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="17" name="@STUDIO:TOOLCONF">
+			<value>Reporter</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="18" name="@STUDIO:TOOLCONF">
+			<value>DiffAnalyzer</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="19" name="@STUDIO:TOOLCONF">
+			<value>Instrumenter</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="20" name="@SCADE:NEWVARIABLESYMBOLS">
+			<value>false</value>
+		</Prop>
+		<Prop id="21" name="@SCADE:CHECKED">
+			<value>false</value>
+		</Prop>
+		<Prop id="27" name="@SCADE:SAVEVERSION">
+			<value>SCADE65</value>
+		</Prop>
+		<Prop id="28" name="@STUDIO:TOOLCONF">
+			<value>Timing and Stack Analysis Tools</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="29" name="@STUDIO:TOOLCONF">
+			<value>Dashboard</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="30" name="@STUDIO:TOOLCONF">
+			<value>Code Generator</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="31" name="@STUDIO:TOOLCONF">
+			<value>Synchronization</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="32" name="@STUDIO:TOOLCONF">
+			<value>Metrics and Rules Checker</value>
+			<value>2</value>
+		</Prop>
+		<Prop id="33" name="@GENERATOR:TARGET_ADAPTOR">
+			<value></value>
+			<configuration>2</configuration>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="7" extensions="scade;xscade" name="Model Files">
+			<elements>
+				<FileRef id="8" persistAs="ASIN.xscade"/>
+				<FileRef id="9" persistAs="SQRT.xscade"/>
+				<FileRef id="10" persistAs="CONF1.xscade"/>
+				<FileRef id="11" persistAs="DERIV.xscade"/>
+				<FileRef id="12" persistAs="LIM.xscade"/>
+				<FileRef id="13" persistAs="RLIM.xscade"/>
+				<FileRef id="14" persistAs="INITIALISATION.xscade"/>
+				<Folder id="22" extensions="*.c" name="External code">
+					<elements>
+						<FileRef id="23" persistAs="ASIN.c">
+							<props>
+								<Prop id="25" name="@SIMULATOR:FILEKIND">
+									<value>CS</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="24" persistAs="SQRT.c">
+							<props>
+								<Prop id="26" name="@SIMULATOR:FILEKIND">
+									<value>CS</value>
+								</Prop>
+							</props>
+						</FileRef>
+					</elements>
+				</Folder>
+			</elements>
+		</Folder>
+	</roots>
+	<configurations>
+		<Configuration id="2" name="SCADE"/>
+	</configurations>
+</Project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<animation>
+    <rule enabled="true" name="B_AlarmeEcrasement" oid="2a56a5fa-dca8-4006-aa66-30dbbde3a1e8">
+        <pattern number_of_cycles="1" value="1"/>
+    </rule>
+    <rule enabled="true" kind="triangular" maximum_value="200.0" minimum_value="0.0" name="PN_AIRSPEED" oid="323afa48-e360-4d5c-9281-2eb63917ba94" step="1.0"/>
+    <rule enabled="true" kind="triangular" maximum_value="10.0" minimum_value="-10.0" name="PN_ROLL_ANGLE" oid="0ae42f27-7ec4-40be-aab0-1c53abf471f3" step="0.3"/>
+    <rule enabled="true" name="B_AlarmeDescente" oid="9f387e02-b88d-41ba-9932-c53bc4c6f58d">
+        <pattern number_of_cycles="1" value="1"/>
+    </rule>
+    <rule enabled="true" kind="triangular" maximum_value="600.0" minimum_value="0.0" name="PN_ALTI" oid="6fe58e9f-f6c0-4a28-bceb-0ab044797fbc" step="1.0"/>
+    <rule enabled="true" name="B_AlarmeDecrochage" oid="bdc859ee-ee90-4765-8cfe-ac7763735750">
+        <pattern number_of_cycles="1" value="1"/>
+    </rule>
+    <rule enabled="true" kind="triangular" maximum_value="15.0" minimum_value="-15.0" name="PN_PITCH_ANGLE" oid="313f11e8-4d70-4509-9254-4366b20e8e3f" step="0.2"/>
+</animation>
+
+<!-- crc32 : 338684322 -->
+

@@ -1,0 +1,91 @@
+
+[STUDIO\TOOLS\CONFIGURATIONS\Checker]
+
+"C:\\Sauvegarde\\SSabathier\\Customers\\AcademicProgram\\INSA\\TP COMMANDE DE VOL SCADE\\SYSTEM_VL_Finished\\SCADE6model\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator - Simulator]
+
+"C:\\Sauvegarde\\SSabathier\\Customers\\AcademicProgram\\INSA\\TP COMMANDE DE VOL SCADE\\SYSTEM_VL_Finished\\SCADE6model\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\Sauvegarde\\SSabathier\\Customers\\AcademicProgram\\INSA\\TP COMMANDE DE VOL SCADE\\SYSTEM_VL_Finished\\SCADE6model\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\oddos.ESTEREL\\Desktop\\SCADE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"D:\\Work\\W-NW\\Insa\\BE_NOTE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\DiffAnalyzer]
+
+"C:\\Sauvegarde\\SSabathier\\Customers\\AcademicProgram\\INSA\\TP COMMANDE DE VOL SCADE\\SYSTEM_VL_Finished\\SCADE6model\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\oddos.ESTEREL\\Desktop\\SCADE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Instrumenter]
+
+"C:\\Sauvegarde\\SSabathier\\Customers\\AcademicProgram\\INSA\\TP COMMANDE DE VOL SCADE\\SYSTEM_VL_Finished\\SCADE6model\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\oddos.ESTEREL\\Desktop\\SCADE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[SCADE\Editor\Shortcut]
+
+"groupNb"="0" 
+
+[SCADE\Editor\Tool]
+
+"UsePolyline"="false" 
+"TransitionKind"="strong" 
+"McVersion"="" 
+
+[SCADE\Diff\Tool]
+
+"LastProject1"="" 
+"LastProject2"="" 
+
+[SCADE\Simulator\ControlBreakpoint]
+
+"Count"="0" 
+
+[SCADE\Simulator\DataBreakpoint]
+
+"Count"="0" 
+
+[SCADE\Simulator\TclBreakpoint]
+
+"Count"="0" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
+
+"C:\\Users\\oddos.ESTEREL\\Desktop\\SCADE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"D:\\Work\\W-NW\\Insa\\BE_NOTE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Dashboard]
+
+"C:\\Users\\oddos.ESTEREL\\Desktop\\SCADE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Synchronization]
+
+"C:\\Users\\oddos.ESTEREL\\Desktop\\SCADE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
+
+"C:\\Users\\oddos.ESTEREL\\Desktop\\SCADE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"D:\\Work\\W-NW\\Insa\\BE_NOTE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp" 
+
+[SCADE\Generator\Tool]
+
+"PragmaTarget"="" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
+
+"D:\\Work\\W-NW\\Insa\\BE_NOTE\\SCADE\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp"="SCADE" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
+
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BIB_SVL\\BIB_SVL.etp"="SCADE" 

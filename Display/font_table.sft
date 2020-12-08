@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.1" ?>
+
+<fontTable generateAsBitmap="false" generateHalo="false" name="simplePFD" size="16">
+    <fontDefinition index="0" path="../../../../../../Program Files (x86)/Esterel Technologies/SCADER161/SCADE LifeCycle/Rapid Prototyper/config/fonts/liberationsans-bold20.nfd"/>
+    <fontDefinition index="1" path="../../../../../../Program Files (x86)/Esterel Technologies/SCADER161/SCADE LifeCycle/Rapid Prototyper/config/fonts/liberationsans-bold26.nfd"/>
+    <fontDefinition index="2" path="../../../../../../Program Files (x86)/Esterel Technologies/SCADER161/SCADE LifeCycle/Rapid Prototyper/config/fonts/liberationsans-bold34.nfd"/>
+    <fontDefinition index="3" path="../../../../../../Program Files (x86)/Esterel Technologies/SCADER161/SCADE LifeCycle/Rapid Prototyper/config/fonts/liberationsans-bold52.nfd"/>
+    <fontDefinition index="4" path="../../../../../../Program Files (x86)/Esterel Technologies/SCADER161/SCADE LifeCycle/Rapid Prototyper/config/fonts/liberationsans-regular12.nfd"/>
+    <fontDefinition index="5" path="../../../../../../Program Files (x86)/Esterel Technologies/SCADER161/SCADE LifeCycle/Rapid Prototyper/config/fonts/liberationsans-regular16.nfd"/>
+</fontTable>
+
+<!-- crc32 : 3848814305 -->
+

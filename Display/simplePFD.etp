@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="84">
+	<props>
+		<Prop id="2" name="@STUDIO:PRODUCT">
+			<value>RAPIDPROTO</value>
+		</Prop>
+		<Prop id="3" name="@RAPIDPROTO:RELEASE">
+			<value>19.0</value>
+		</Prop>
+		<Prop id="4" name="@RAPIDPROTO:RATIO">
+			<value>1.0</value>
+			<value>1.0</value>
+		</Prop>
+		<Prop id="5" name="@RAPIDPROTO:DEFAULTCOLORTABLE">
+			<value>simplePFD.sct</value>
+		</Prop>
+		<Prop id="6" name="@RAPIDPROTO:DEFAULTLWTABLE">
+			<value>simplePFD.swt</value>
+		</Prop>
+		<Prop id="7" name="@RAPIDPROTO:DEFAULTLSTABLE">
+			<value>simplePFD.sst</value>
+		</Prop>
+		<Prop id="8" name="@RAPIDPROTO:TEXTURETABLE">
+			<value>simplePFD.stt</value>
+		</Prop>
+		<Prop id="9" name="@RAPIDPROTO:FONTTABLE">
+			<value>simplePFD.sft</value>
+		</Prop>
+		<Prop id="12" name="@RAPIDPROTO:FONTLIBRARY">
+			<value>Fonts.dll</value>
+		</Prop>
+		<Prop id="16" name="@RAPIDPROTO:CONFTARGET">
+			<value>SuiteCosimulation</value>
+			<configuration>15</configuration>
+		</Prop>
+		<Prop id="17" name="CONFIGURATIONS">
+			<value>15</value>
+			<value>24</value>
+			<value>32</value>
+			<value>39</value>
+			<value>46</value>
+			<value>61</value>
+			<value>68</value>
+		</Prop>
+		<Prop id="18" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>15</configuration>
+		</Prop>
+		<Prop id="19" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>15</configuration>
+		</Prop>
+		<Prop id="20" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>15</configuration>
+		</Prop>
+		<Prop id="21" name="@RAPIDPROTO:INTEGRATIONMODE">
+			<value>asynchronous</value>
+			<configuration>15</configuration>
+		</Prop>
+		<Prop id="22" name="@RAPIDPROTO:POINTERID">
+			<value>0</value>
+			<configuration>15</configuration>
+		</Prop>
+		<Prop id="23" name="@RAPIDPROTO:KEYBOARDID">
+			<value>0</value>
+			<configuration>15</configuration>
+		</Prop>
+		<Prop id="25" name="@RAPIDPROTO:CONFTARGET">
+			<value>Windows</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="26" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="27" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="28" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_Exe</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="29" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="30" name="@RAPIDPROTO:POINTERID">
+			<value>0</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="31" name="@RAPIDPROTO:KEYBOARDID">
+			<value>0</value>
+			<configuration>24</configuration>
+		</Prop>
+		<Prop id="33" name="@RAPIDPROTO:CONFTARGET">
+			<value>Android</value>
+			<configuration>32</configuration>
+		</Prop>
+		<Prop id="34" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>32</configuration>
+		</Prop>
+		<Prop id="35" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>32</configuration>
+		</Prop>
+		<Prop id="36" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>32</configuration>
+		</Prop>
+		<Prop id="37" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>32</configuration>
+		</Prop>
+		<Prop id="38" name="@RAPIDPROTO:APPORIENTATION">
+			<value>Landscape</value>
+			<configuration>32</configuration>
+		</Prop>
+		<Prop id="40" name="@RAPIDPROTO:CONFTARGET">
+			<value>iOS</value>
+			<configuration>39</configuration>
+		</Prop>
+		<Prop id="41" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>39</configuration>
+		</Prop>
+		<Prop id="42" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>39</configuration>
+		</Prop>
+		<Prop id="43" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>39</configuration>
+		</Prop>
+		<Prop id="44" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>39</configuration>
+		</Prop>
+		<Prop id="45" name="@RAPIDPROTO:APPORIENTATION">
+			<value>Landscape</value>
+			<configuration>39</configuration>
+		</Prop>
+		<Prop id="47" name="@RAPIDPROTO:CONFTARGET">
+			<value>FMU</value>
+			<configuration>46</configuration>
+		</Prop>
+		<Prop id="48" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>46</configuration>
+		</Prop>
+		<Prop id="49" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>46</configuration>
+		</Prop>
+		<Prop id="50" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>46</configuration>
+		</Prop>
+		<Prop id="51" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>46</configuration>
+		</Prop>
+		<Prop id="53" name="@SDY:RMGPROJECT"/>
+		<Prop id="62" name="@RAPIDPROTO:CONFTARGET">
+			<value>codegen</value>
+			<configuration>61</configuration>
+		</Prop>
+		<Prop id="63" name="@RAPIDPROTO:CONFSOURCE">
+			<value>simplePFD.rgfx</value>
+			<configuration>61</configuration>
+		</Prop>
+		<Prop id="64" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>61</configuration>
+		</Prop>
+		<Prop id="65" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_Code</value>
+			<configuration>61</configuration>
+		</Prop>
+		<Prop id="66" name="@SDY:CODEGENERATOR">
+			<value>KCG66</value>
+			<configuration>61</configuration>
+		</Prop>
+		<Prop id="67" name="@SDY:CODEGENCHECK">
+			<value>false</value>
+			<configuration>61</configuration>
+		</Prop>
+		<Prop id="69" name="@RAPIDPROTO:CONFTARGET">
+			<value>Windows</value>
+			<configuration>68</configuration>
+		</Prop>
+		<Prop id="70" name="@RAPIDPROTO:CONFSOURCE">
+			<value>simplePFD.rgfx</value>
+			<configuration>68</configuration>
+		</Prop>
+		<Prop id="71" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>68</configuration>
+		</Prop>
+		<Prop id="72" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_Exe</value>
+			<configuration>68</configuration>
+		</Prop>
+		<Prop id="73" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>68</configuration>
+		</Prop>
+		<Prop id="74" name="@RAPIDPROTO:POINTERID">
+			<value>0</value>
+			<configuration>68</configuration>
+		</Prop>
+		<Prop id="75" name="@RAPIDPROTO:KEYBOARDID">
+			<value>0</value>
+			<configuration>68</configuration>
+		</Prop>
+		<Prop id="80" name="@RAPIDPROTO:SCADESUITEPROJECTS">
+			<value>../FlightControl/FlightControl.etp</value>
+			<value>../MODELE_SVL.etp</value>
+			<value>../SYSTEM_VL_Finished/MODELE_SVL.etp</value>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="10" extensions="sct;swt;sst;sft;stt" name="Resource Files">
+			<elements>
+				<FileRef id="54" persistAs="simplePFD.sct"/>
+				<FileRef id="56" persistAs="simplePFD.swt"/>
+				<FileRef id="58" persistAs="simplePFD.sst"/>
+				<FileRef id="60" persistAs="simplePFD.stt"/>
+				<FileRef id="83" persistAs="simplePFD.sft">
+					<props>
+						<Prop id="84" name="@RAPIDPROTO:FONTLIBRARY">
+							<value>%FontTableName%.dll</value>
+						</Prop>
+					</props>
+				</FileRef>
+			</elements>
+		</Folder>
+		<Folder id="11" extensions="rgfx;wgfx" name="Model Files">
+			<elements>
+				<FileRef id="52" persistAs="simplePFD.rgfx">
+					<props>
+						<Prop id="55" name="@RAPIDPROTO:MODELCOLORTABLE">
+							<value>simplePFD.sct</value>
+						</Prop>
+						<Prop id="57" name="@RAPIDPROTO:MODELLWTABLE">
+							<value>simplePFD.swt</value>
+						</Prop>
+						<Prop id="59" name="@RAPIDPROTO:MODELLSTABLE">
+							<value>simplePFD.sst</value>
+						</Prop>
+						<Prop id="77" name="@SDY:ANIMATIONFILE">
+							<value>simplePFD.asfx</value>
+						</Prop>
+						<Prop id="79" name="@SDY:TRACEFILE">
+							<value>simplePFD.rgfx.trace</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="82" persistAs="LED.wgfx"/>
+			</elements>
+		</Folder>
+		<Folder id="13" extensions="etp" name="Libraries"/>
+		<FileRef id="76" persistAs="simplePFD.asfx"/>
+		<FileRef id="78" persistAs="simplePFD.rgfx.trace"/>
+	</roots>
+	<configurations>
+		<Configuration id="15" name="Co-simulation"/>
+		<Configuration id="24" name="Windows"/>
+		<Configuration id="32" name="Android"/>
+		<Configuration id="39" name="iOS"/>
+		<Configuration id="46" name="FMU"/>
+		<Configuration id="61" name="Code: simplePFD"/>
+		<Configuration id="68" name="Windows: simplePFD"/>
+	</configurations>
+</Project>

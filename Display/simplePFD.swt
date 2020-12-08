@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<lineWidthTable name="line_width_table" size="7">
+    <lineWidthDefinition colorWidth="1.5" haloWidth="3.5" index="0" name="Line width 2" value="2" width="2.4"/>
+    <lineWidthDefinition colorWidth="1.65" haloWidth="3.65" index="1" name="Line width 3" value="3" width="2.55"/>
+    <lineWidthDefinition colorWidth="2.25" haloWidth="4.25" index="2" name="Line width 4" value="4" width="2.75"/>
+    <lineWidthDefinition colorWidth="2.55" haloWidth="4.55" index="3" name="Line width 5" value="5" width="3.55"/>
+    <lineWidthDefinition colorWidth="3.55" haloWidth="5.55" index="4" name="Line width 6" value="6" width="4.55"/>
+    <lineWidthDefinition colorWidth="4.25" haloWidth="6.25" index="5" name="Line width 7" value="7" width="5.55"/>
+    <lineWidthDefinition colorWidth="5.0" haloWidth="7.0" index="6" name="Line width 8" value="8" width="6.55"/>
+</lineWidthTable>
+
+<!-- crc32 : 3101335741 -->
+

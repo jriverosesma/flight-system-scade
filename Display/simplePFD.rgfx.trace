@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.1" ?>
+
+<traceability>
+    <object id="1528d3f9-b4f1-4fdf-a5e5-eb7d6118df22" mandatory="false">
+        <requirement id="PFD_01"/>
+        <requirement id="PFD_04"/>
+    </object>
+    <object id="6d936698-7ed4-4c11-a59d-ad0d80a07700" mandatory="false">
+        <requirement id="PFD_03"/>
+    </object>
+    <object id="c26add14-f7f3-439d-8aae-e3273c155fc7" mandatory="false">
+        <requirement id="PFD_06"/>
+    </object>
+    <object id="032e9387-8537-4f45-ab9e-462d03486bfb" mandatory="false">
+        <requirement id="PFD_02"/>
+    </object>
+    <object id="946a5d42-d4d6-4e4c-89eb-686fa62d44c6" mandatory="false">
+        <requirement id="PFD_05"/>
+    </object>
+</traceability>
+
+<!-- crc32 : 1965089689 -->
+

@@ -1,0 +1,79 @@
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
+
+"C:\\tmp\\BE2\\BE2.etp"="KCG" 
+"C:\\tmp\\SCADE\\BE2\\BE2.etp"="KCG" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
+
+"C:\\tmp\\BE2\\BE2.etp"="MetricRule" 
+"C:\\tmp\\SCADE\\BE2\\BE2.etp"="MetricRule" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="MetricRule" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\tmp\\BE2\\BE2.etp"="HTML" 
+"C:\\tmp\\SCADE\\BE2\\BE2.etp"="HTML" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="HTML" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Synchronization]
+
+"C:\\tmp\\BE2\\BE2.etp"="KCG" 
+"C:\\tmp\\SCADE\\BE2\\BE2.etp"="KCG" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
+
+"C:\\tmp\\BE2\\BE2.etp"="KCG" 
+"C:\\tmp\\SCADE\\BE2\\BE2.etp"="KCG" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
+
+"C:\\tmp\\BE2\\BE2.etp"="KCG" 
+"C:\\tmp\\SCADE\\BE2\\BE2.etp"="KCG" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\DiffAnalyzer]
+
+"C:\\tmp\\BE2\\BE2.etp"="KCG" 
+"C:\\tmp\\SCADE\\BE2\\BE2.etp"="KCG" 
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp" 
+
+[SCADE\Editor\Shortcut]
+
+"groupNb"="0" 
+
+[SCADE\Editor\Tool]
+
+"UsePolyline"="false" 
+"TransitionKind"="strong" 
+"McVersion"="MC66" 
+
+[SCADE\Diff\Tool]
+
+"LastProject1"="" 
+"LastProject2"="" 
+
+[SCADE\Generator\Tool]
+
+"PragmaTarget"="C" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Design Verifier]
+
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Test Tool]
+
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
+
+"C:\\Users\\Usuario\\SCADE\\SCADE TP_2\\BE2\\BE2.etp"="KCG" 

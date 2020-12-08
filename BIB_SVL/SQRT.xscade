@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" external="imported" name="SQRT">
+			<inputs>
+				<Variable name="E">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_9A/2000607959/E9D/3834152C/5879"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="S">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_9B/2000607959/E9D/3834152C/50EC"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator commentsToC="true" oid="hp_9C/2000607959/E9D/3834152C/4B4D" symbolFile="SQRT.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6">
+					<comment>produced by ScadetoSCADE6 Revision: 1.69 </comment>
+				</ed:Operator>
+				<kcg:Pragma>
+					doc produced by ScadetoSCADE6 Revision: 1.69 
+				</kcg:Pragma>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="INITIALISATION">
+			<outputs>
+				<Variable name="Bool_Init">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="win_E9/4A12/3AC/4459BE6F/44E5"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="win_EC/4A12/3AC/4459BE7E/38A5"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="win_EE/4A12/3AC/4459BE83/3084"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L4">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="win_F2/4A12/3AC/4459BF81/233D"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- Bool_Init = _L4; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="Bool_Init"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L4"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation commentsToC="true" oid="win_EA/4A12/3AC/4459BE77/1109"/>
+					</pragmas>
+				</Equation>
+				<!-- _L1 = true; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<ConstValue value="true"/>
+					</right>
+					<pragmas>
+						<ed:Equation commentsToC="true" oid="win_EB/4A12/3AC/4459BE7E/4F74"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = false; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<ConstValue value="false"/>
+					</right>
+					<pragmas>
+						<ed:Equation commentsToC="true" oid="win_ED/4A12/3AC/4459BE83/7B66"/>
+					</pragmas>
+				</Equation>
+				<!-- _L4 = (_L1) -> (_L2); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<!-- (_L1) -> (_L2) -->
+						<InitOp>
+							<value>
+								<ListExpression>
+									<items>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</items>
+								</ListExpression>
+							</value>
+							<flow>
+								<ListExpression>
+									<items>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L2"/>
+											</path>
+										</IdExpression>
+									</items>
+								</ListExpression>
+							</flow>
+						</InitOp>
+					</right>
+					<pragmas>
+						<ed:Equation commentsToC="true" oid="win_F1/4A12/3AC/4459BF81/5310"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator commentsToC="true" oid="win_E7/4A12/3AC/4459BE43/245F" symbolFile="INITIALISATION.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6">
+					<comment>produced by ScadetoSCADE6 Revision: 1.69 </comment>
+					<diagrams>
+						<NetDiagram name="eq_INITIALISATION_1" landscape="true" format="A4 (210 297)" oid="win_E8/4A12/3AC/4459BE43/25E">
+							<presentationElements>
+								<EquationGE presentable="win_EA/4A12/3AC/4459BE77/1109">
+									<position>
+										<Point x="14376" y="5740"/>
+									</position>
+									<size>
+										<Size width="1016" height="508"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="win_F1/4A12/3AC/4459BF81/5310" dstEquation="win_EA/4A12/3AC/4459BE77/1109">
+									<positions>
+										<Point x="12243" y="5994"/>
+										<Point x="13284" y="5994"/>
+										<Point x="13284" y="5994"/>
+										<Point x="14376" y="5994"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="win_EB/4A12/3AC/4459BE7E/4F74">
+									<position>
+										<Point x="9550" y="7391"/>
+									</position>
+									<size>
+										<Size width="838" height="305"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="win_ED/4A12/3AC/4459BE83/7B66">
+									<position>
+										<Point x="4826" y="5842"/>
+									</position>
+									<size>
+										<Size width="940" height="305"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="win_F1/4A12/3AC/4459BF81/5310">
+									<position>
+										<Point x="11227" y="5486"/>
+									</position>
+									<size>
+										<Size width="1016" height="1016"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="win_ED/4A12/3AC/4459BE83/7B66" dstEquation="win_F1/4A12/3AC/4459BF81/5310">
+									<positions>
+										<Point x="5766" y="5994"/>
+										<Point x="8484" y="5994"/>
+										<Point x="8484" y="5994"/>
+										<Point x="11227" y="5994"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="win_EB/4A12/3AC/4459BE7E/4F74" dstEquation="win_F1/4A12/3AC/4459BF81/5310">
+									<positions>
+										<Point x="10389" y="7544"/>
+										<Point x="11735" y="7544"/>
+										<Point x="11735" y="6502"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+				<kcg:Pragma>
+					doc produced by ScadetoSCADE6 Revision: 1.69 
+				</kcg:Pragma>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

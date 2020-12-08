@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="CONF1">
+			<inputs>
+				<Variable name="E">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_2DC/2013051125/726/3447891B/5221"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Cycle">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_2DE/2013051125/726/3447891B/4BBA" hidden="true"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Init">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_2DF/2013051125/726/3447891B/627C" hidden="true"/>
+					</pragmas>
+				</Variable>
+				<Variable name="B_Init">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_A3/2004647621/27D0/35E52B97/16B" hidden="true"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="S">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="hp_2E2/2013051125/726/3447891B/174E"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1_ct">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="win_BAD/1AF6/127/3CCD71A9/1269"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L1_ctinit">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable commentsToC="true" oid="win_BAE/7FAE/127/3CCD71A9/2032"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1_ctinit = if E then (Init + 1) else (1); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1_ctinit"/>
+					</lefts>
+					<right>
+						<!-- if E then (Init + 1) else (1) -->
+						<IfThenElseOp>
+							<if>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="E"/>
+									</path>
+								</IdExpression>
+							</if>
+							<then>
+								<ListExpression>
+									<items>
+										<!-- Init + 1 -->
+										<NAryOp operator="+">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="Init"/>
+													</path>
+												</IdExpression>
+												<ConstValue value="1"/>
+											</operands>
+										</NAryOp>
+									</items>
+								</ListExpression>
+							</then>
+							<else>
+								<ListExpression>
+									<items>
+										<ConstValue value="1"/>
+									</items>
+								</ListExpression>
+							</else>
+						</IfThenElseOp>
+					</right>
+					<pragmas>
+						<ed:Equation commentsToC="true" oid="win_BBB/1E73/127/3CCD71A9/469F"/>
+					</pragmas>
+				</Equation>
+				<!-- _L1_ct = (_L1_ctinit) -> (if B_Init then (_L1_ctinit) else (if ( not E) then (0) ... -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1_ct"/>
+					</lefts>
+					<right>
+						<!-- (_L1_ctinit) -> (if B_Init then (_L1_ctinit) else (if ( not E) then (0) else (pre... -->
+						<InitOp>
+							<value>
+								<ListExpression>
+									<items>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1_ctinit"/>
+											</path>
+										</IdExpression>
+									</items>
+								</ListExpression>
+							</value>
+							<flow>
+								<ListExpression>
+									<items>
+										<!-- if B_Init then (_L1_ctinit) else (if ( not E) then (0) else (pre _L1_ct + 1)) -->
+										<IfThenElseOp>
+											<if>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="B_Init"/>
+													</path>
+												</IdExpression>
+											</if>
+											<then>
+												<ListExpression>
+													<items>
+														<IdExpression>
+															<path>
+																<ConstVarRef name="_L1_ctinit"/>
+															</path>
+														</IdExpression>
+													</items>
+												</ListExpression>
+											</then>
+											<else>
+												<ListExpression>
+													<items>
+														<!-- if ( not E) then (0) else (pre _L1_ct + 1) -->
+														<IfThenElseOp>
+															<if>
+																<!--  not E -->
+																<UnaryOp operator="not">
+																	<operand>
+																		<IdExpression>
+																			<path>
+																				<ConstVarRef name="E"/>
+																			</path>
+																		</IdExpression>
+																	</operand>
+																</UnaryOp>
+															</if>
+															<then>
+																<ListExpression>
+																	<items>
+																		<ConstValue value="0"/>
+																	</items>
+																</ListExpression>
+															</then>
+															<else>
+																<ListExpression>
+																	<items>
+																		<!-- pre _L1_ct + 1 -->
+																		<NAryOp operator="+">
+																			<operands>
+																				<!-- pre _L1_ct -->
+																				<PreOp>
+																					<flow>
+																						<ListExpression>
+																							<items>
+																								<IdExpression>
+																									<path>
+																										<ConstVarRef name="_L1_ct"/>
+																									</path>
+																								</IdExpression>
+																							</items>
+																						</ListExpression>
+																					</flow>
+																				</PreOp>
+																				<ConstValue value="1"/>
+																			</operands>
+																		</NAryOp>
+																	</items>
+																</ListExpression>
+															</else>
+														</IfThenElseOp>
+													</items>
+												</ListExpression>
+											</else>
+										</IfThenElseOp>
+									</items>
+								</ListExpression>
+							</flow>
+						</InitOp>
+					</right>
+					<pragmas>
+						<ed:Equation commentsToC="true" oid="win_BD5/4109/127/3CCD71A9/6A44"/>
+					</pragmas>
+				</Equation>
+				<!-- S = _L1_ct > Cycle; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="S"/>
+					</lefts>
+					<right>
+						<!-- _L1_ct > Cycle -->
+						<BinaryOp operator="&gt;">
+							<operands>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L1_ct"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="Cycle"/>
+									</path>
+								</IdExpression>
+							</operands>
+						</BinaryOp>
+					</right>
+					<pragmas>
+						<ed:Equation commentsToC="true" oid="win_BDC/6101/127/3CCD71A9/515A"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator commentsToC="true" oid="CONF1_TIM/0/0/0/1" symbolFile="CONF1.ssl" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6">
+					<comment>produced by ScadetoSCADE6 Revision: 1.69 </comment>
+					<diagrams>
+						<TextDiagram name="eq_CONF" landscape="true" defaultPageFormat="false" oid="win_BAF/1C1D/127/3CCD71A9/CA7">
+							<presentationElements>
+								<EquationGE presentable="win_BBB/1E73/127/3CCD71A9/469F">
+									<position>
+										<Point x="0" y="0"/>
+									</position>
+									<size>
+										<Size width="0" height="0"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="win_BD5/4109/127/3CCD71A9/6A44">
+									<position>
+										<Point x="0" y="0"/>
+									</position>
+									<size>
+										<Size width="0" height="0"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="win_BDC/6101/127/3CCD71A9/515A">
+									<position>
+										<Point x="0" y="0"/>
+									</position>
+									<size>
+										<Size width="0" height="0"/>
+									</size>
+								</EquationGE>
+							</presentationElements>
+						</TextDiagram>
+					</diagrams>
+				</ed:Operator>
+				<kcg:Pragma>
+					doc produced by ScadetoSCADE6 Revision: 1.69 
+				</kcg:Pragma>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

@@ -1,0 +1,170 @@
+-- ######################################################################
+-- ##
+-- ## AIRBUS
+-- ##
+-- ## ENVIRONNEMENT SCADE 
+-- ##
+-- ## EYDT		FICHIER DES TYPES DE NOTES POUR LE CARTOUCHE
+-- ##
+-- ##     MISE A JOUR:	13/05/03	AUTEUR:	EYDT
+-- ######################################################################
+
+-- ######################################################################
+-- ##
+-- ## Versions des outils
+-- ## -------------------
+-- ##
+-- ## 	Outil SCADE 	: 4.1.2
+-- ##
+-- ######################################################################
+
+-- ######################################################################
+-- # DEBUT : FICHIER MODELE DES ANNOTATIONS #############################
+-- ######################################################################
+
+
+-- ##  Entete de UNITES_COMMENTAIRES.aty
+-- #############################################################################
+-- ##
+-- ## FICHIER DES TYPES D'ANNOTATIONS
+-- ##
+-- #############################################################################
+
+-- #############################################################################
+-- ##
+-- ##  MODULE : DEFINITION DES DIFFERENTS TYPES DE NOTES
+-- ##
+-- #############################################################################
+Notes-Types DEFINITIONS ::=
+BEGIN
+-- ##  Types de notes de CARTOU.aty
+
+-- ######################################################################
+-- ##
+-- ##  MODULE : DEFINITION DES DIFFERENTS TYPES DE NOTES
+-- ##
+-- ######################################################################
+
+
+-- ######################################################################
+-- ##### ANNOTATIONS CARTOUCHE: INCRUSTEES  #############################
+-- ######################################################################
+
+-- ----------------------------------------------------------------------
+-- Annotations composant le CARTOUCHE SCADE
+
+
+CARTOU_TITRE ::= SEQUENCE OF {
+SEQUENCE {annot_object OID,
+          name STRING,
+          note_graphical_information
+          {NT_INCRUSTABLE   	BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_PERMANENT     	BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_LOCATION   	STRING  {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE "RELATIVE"},
+           NT_MODIFY   		BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_FONT   		INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 3},
+           NT_FRAME   		BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_FRAME_WIDTH 	INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 500},
+           NT_FRAME_HEIGHT 	INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 20},
+           NT_POS_X 		REAL    {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 10 }, 
+           NT_POS_Y 		REAL    {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 30 } },
+          information
+          {to_c                  BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE       T} ,
+	   CARTOU_TITRE		TEXT    {NT_INCRUSTABLE         T,
+	   				 NT_EDITABLE   T,
+          			 	 NT_MANDATORY	   T,
+          			 	 NT_DEFAULT_VALUE "  Titre :"} } } }
+
+
+CARTOU_AUTEUR ::= SEQUENCE OF {
+SEQUENCE {annot_object OID,
+          name STRING,
+          note_graphical_information
+          {NT_INCRUSTABLE   	BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_PERMANENT     	BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_LOCATION   	STRING  {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE "RELATIVE"},
+           NT_MODIFY   		BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_FONT   		INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 3},
+           NT_FRAME   		BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_FRAME_WIDTH 	INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 300},
+           NT_FRAME_HEIGHT 	INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 20},
+           NT_POS_X 		REAL    {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 10 }, 
+           NT_POS_Y 		REAL    {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 50 } },
+          information
+          {to_c                  BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE       T} ,
+	   CARTOU_AUTEUR	TEXT    {NT_INCRUSTABLE         T,
+	   				 NT_EDITABLE   T,
+          			 	 NT_MANDATORY	   T,
+          			 	 NT_DEFAULT_VALUE "  Auteur :"} } } }
+
+
+CARTOU_DATE ::= SEQUENCE OF {
+SEQUENCE {annot_object OID,
+          name STRING,
+          note_graphical_information
+          {NT_INCRUSTABLE   	BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_PERMANENT     	BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_LOCATION   	STRING  {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE "RELATIVE"},
+           NT_MODIFY   		BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_FONT   		INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 3},
+           NT_FRAME   		BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE T},
+           NT_FRAME_WIDTH 	INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 200},
+           NT_FRAME_HEIGHT 	INTEGER {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 20},
+           NT_POS_X 		REAL    {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 310 }, 
+           NT_POS_Y 		REAL    {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE 50 } },
+          information
+          {to_c                  BOOLEAN {NT_DISPLAYABLE	F,
+          				  NT_DEFAULT_VALUE       T} ,
+	   CARTOU_DATE		TEXT    {NT_INCRUSTABLE         T,
+	   				 NT_EDITABLE   T,
+          			 	 NT_MANDATORY	   T,
+          			 	 NT_DEFAULT_VALUE "  Date :"} } } }
+
+
+END
+Annotation-Rules DEFINITIONS ::=
+BEGIN
+
+-- ######################################################################
+-- ##
+-- ##  MODULE :  ASSOCIATIONS ENTITES ANNOTABLES / TYPES DE NOTES
+-- ##
+-- ######################################################################
+
+equation_block ::= { {CARTOU_TITRE		T	1	1},
+		     {CARTOU_AUTEUR		T	1	1},
+		     {CARTOU_DATE		T	1	1}}
+
+END

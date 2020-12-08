@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<fontTable generateAsBitmap="false" generateHalo="false" name="simplePFD" size="16">
+    <fontDefinition index="0" path="Fonts/Font T1.nfd"/>
+    <fontDefinition index="1" path="Fonts/Font T2.nfd"/>
+    <fontDefinition index="2" path="Fonts/Font T3.nfd"/>
+    <fontDefinition index="3" path="Fonts/Font T4.nfd"/>
+    <fontDefinition index="4" path="Fonts/Font T5.nfd"/>
+    <fontDefinition index="5" path="Fonts/Sans18.nfd"/>
+    <fontDefinition index="6" path="Fonts/Sans26.nfd"/>
+    <fontDefinition index="7" path="Fonts/SansBold18.nfd"/>
+    <fontDefinition index="8" path="Fonts/SansBold26.nfd"/>
+    <fontDefinition index="9" path="Fonts/Mono18.nfd"/>
+    <fontDefinition index="10" path="Fonts/Mono26.nfd"/>
+    <fontDefinition index="11" path="Fonts/MonoBold18.nfd"/>
+    <fontDefinition index="12" path="Fonts/MonoBold26.nfd"/>
+</fontTable>
+
+<!-- crc32 : 2498615419 -->
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<animation>
+    <rule enabled="true" kind="triangular" maximum_value="100.0" minimum_value="-100.0" name="F_Elevateurs" oid="61ab7bee-18c2-4671-ad55-b15de8abfdc3" step="0.01"/>
+</animation>
+
+<!-- crc32 : 2441689808 -->
+

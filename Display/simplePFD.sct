@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<colorTable backgroundIndex="1" name="color_table" size="2048">
+    <colorDefinition alpha="0xFF" index="1" name="BLACK" rgb="0x000000"/>
+    <colorDefinition alpha="0xFF" index="2" name="SKY" rgb="0x315DAD"/>
+    <colorDefinition alpha="0xFF" index="4" name="GROUND" rgb="0x632C00"/>
+    <colorDefinition alpha="0xFF" index="6" name="BLUE1" rgb="0x0000FF"/>
+    <colorDefinition alpha="0xFF" index="11" name="GREEN1" rgb="0x00FF00"/>
+    <colorDefinition alpha="0xFF" index="13" name="GREEN3" rgb="0x00BA00"/>
+    <colorDefinition alpha="0xFF" index="14" name="GREEN4" rgb="0x00AA00"/>
+    <colorDefinition alpha="0xFF" index="15" name="GREEN5" rgb="0x008600"/>
+    <colorDefinition alpha="0xFF" index="16" name="CYAN1" rgb="0x42DBE7"/>
+    <colorDefinition alpha="0xFF" index="17" name="CYAN2" rgb="0x42DFE7"/>
+    <colorDefinition alpha="0xFF" index="18" name="CYAN3" rgb="0x42AAE7"/>
+    <colorDefinition alpha="0xFF" index="21" name="GREY1" rgb="0xADA2B5"/>
+    <colorDefinition alpha="0xFF" index="22" name="GREY2" rgb="0x293431"/>
+    <colorDefinition alpha="0xFF" index="23" name="GREY3" rgb="0x5A4D63"/>
+    <colorDefinition alpha="0xFF" index="24" name="GREY4" rgb="0x736D7B"/>
+    <colorDefinition alpha="0xFF" index="25" name="GREY5" rgb="0x736573"/>
+    <colorDefinition alpha="0xFF" index="26" name="MAGENTA1" rgb="0xF76DE7"/>
+    <colorDefinition alpha="0xFF" index="27" name="MAGENTA2" rgb="0xF76DE7"/>
+    <colorDefinition alpha="0xFF" index="28" name="MAGENTA3" rgb="0xEF5DE7"/>
+    <colorDefinition alpha="0xFF" index="31" name="AMBER1" rgb="0xF77D00"/>
+    <colorDefinition alpha="0xFF" index="32" name="AMBER2" rgb="0xF79200"/>
+    <colorDefinition alpha="0xFF" index="33" name="AMBER3" rgb="0xE76D00"/>
+    <colorDefinition alpha="0xFF" index="34" name="AMBER4" rgb="0xF77D00"/>
+    <colorDefinition alpha="0xFF" index="36" name="RED1" rgb="0xFF0000"/>
+    <colorDefinition alpha="0xFF" index="37" name="RED2" rgb="0xFF0000"/>
+    <colorDefinition alpha="0xFF" index="38" name="RED3" rgb="0xDE0000"/>
+    <colorDefinition alpha="0xFF" index="39" name="RED4" rgb="0xBD0000"/>
+    <colorDefinition alpha="0xFF" index="41" name="WHITE1" rgb="0xEFF3EF"/>
+    <colorDefinition alpha="0xFF" index="43" name="WHITE3" rgb="0xE7EBE7"/>
+    <colorDefinition alpha="0xFF" index="46" name="YELLOW1" rgb="0xFFFF00"/>
+    <colorDefinition alpha="0xFF" index="48" name="YELLOW3" rgb="0xF7DF00"/>
+    <colorDefinition alpha="0xFF" index="51" name="GREY6" rgb="0x101818"/>
+</colorTable>
+
+<!-- crc32 : 2874313275 -->
+
