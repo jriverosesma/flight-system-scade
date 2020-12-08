@@ -1,0 +1,20 @@
+[scade_version: 2019 R1]
+[scade_project: C:/Users/Usuario/SCADE/SCADE TP_2/BE2/BE2.etp]
+[Code Generator]
+424d899e261aaf924e92cbfddd92cd58 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/AutoPilot.c
+72282706e66dbc07a6f8abaef6ff6ee1 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/AutoPilot.h
+9e9027b6c1900c813c36ab8222830fae C:/Users/Usuario/SCADE/SCADE TP_2/BIB_SVL/ASIN.c
+15793eac0f4542945886610de15fef9d C:/Users/Usuario/SCADE/SCADE TP_2/BIB_SVL/SQRT.c
+af72967fa49cad6ed5def6ca240f5095 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/scade_model_without_unused.scade
+65f614aa60da5a6d7f8e327db30b6ad7 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/cmd_cg.log
+5dec710bd8b3c5f6021ba296040f178f C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/config.txt
+6b1bc2692d59730b73335f3e8402f465 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_consts.c
+92194a5fb05686fa5eba7fb783fcf2d3 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_consts.h
+85ee69385b9ce09b99b2ca687efcfbce C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_files.txt
+c570e85441febaa6f6d5e23e14e58b55 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_imported_types.h
+994c49bd6148fbcad7dbc5a31e09370a C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_metrics.txt
+41cfd6fc69dc1c576bf7050bbb275a1d C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_sensors.h
+da90cf9739405d8ea6d4205496f46174 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_types.c
+22fe58f226ea608c197ada7f458962d5 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/kcg_types.h
+4297754d8407bf3f3645975f0b0a4fc8 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/mapping.xml
+ae3eb7ab76cdc5ab7228e39b505e73d6 C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/user_macros.h

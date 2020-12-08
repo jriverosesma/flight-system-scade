@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="AutoPilot"/>
+    <Option name="auth" value="#off#"/>
+    <Constant macroDef="true" scadeName="stickPointClimb" scadeType="float32" targetName="stickPointClimb" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="stickPoinCruising" scadeType="float32" targetName="stickPoinCruising" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="stickPointDescent" scadeType="float32" targetName="stickPointDescent" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="climbUpperThreshold" scadeType="float32" targetName="climbUpperThreshold" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="descentLowerThreshold" scadeType="float32" targetName="descentLowerThreshold" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="crusingLowerThreshold" scadeType="float32" targetName="crusingLowerThreshold" targetType="kcg_float32"/>
+    <Constant macroDef="true" scadeName="cruisingUpperThreshold" scadeType="float32" targetName="cruisingUpperThreshold" targetType="kcg_float32"/>
+    <RootNode headerFile="AutoPilot.h" scadeName="AutoPilot" targetCycleFct="AutoPilot" targetInitFct="AutoPilot_reset" targetInitializationFct="AutoPilot_init">
+      <Input inCtx="true" scadeName="altitude" scadeType="float32" targetName="altitude" targetType="kcg_float32"/>
+      <Input inCtx="true" scadeName="automacticPilot" scadeType="bool" targetName="automacticPilot" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="stickPoint" scadeType="float32" targetName="stickPoint" targetType="kcg_float32"/>
+      <Output inCtx="true" scadeName="stickSetPoint" scadeType="float32" targetName="stickSetPoint" targetType="kcg_float32"/>
+      <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
+        <State scadeName="Climb" targetName="SSM_st_Climb_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="strong" scadeDest="AutoPilotOff" targetName="SSM_TR_Climb_AutoPilotOff_1_Climb_SM1"/>
+          </Fork>
+          <Fork priority="2">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Cruising" targetName="SSM_TR_Climb_Cruising_2_Climb_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="Cruising" targetName="SSM_st_Cruising_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="strong" scadeDest="AutoPilotOff" targetName="SSM_TR_Cruising_AutoPilotOff_1_Cruising_SM1"/>
+          </Fork>
+          <Fork priority="2">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Descent" targetName="SSM_TR_Cruising_Descent_2_Cruising_SM1"/>
+          </Fork>
+          <Fork priority="3">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Climb" targetName="SSM_TR_Cruising_Climb_3_Cruising_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="Descent" targetName="SSM_st_Descent_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="strong" scadeDest="AutoPilotOff" targetName="SSM_TR_Descent_AutoPilotOff_1_Descent_SM1"/>
+          </Fork>
+          <Fork priority="2">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Cruising" targetName="SSM_TR_Descent_Cruising_2_Descent_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="AutoPilotOff" targetName="SSM_st_AutoPilotOff_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Climb" targetName="SSM_TR_AutoPilotOff_Climb_1_AutoPilotOff_SM1"/>
+          </Fork>
+          <Fork priority="2">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Cruising" targetName="SSM_TR_AutoPilotOff_Cruising_2_AutoPilotOff_SM1"/>
+          </Fork>
+          <Fork priority="3">
+            <Condition/>
+            <Transition kind="strong" scadeDest="Descent" targetName="SSM_TR_AutoPilotOff_Descent_3_AutoPilotOff_SM1"/>
+          </Fork>
+        </State>
+        <NextState inCtx="true" mem="true" targetName="SM1_state_nxt"/>
+      </Automaton>
+      <OutCtxType targetName="outC_AutoPilot"/>
+      <InCtxType targetName="inC_AutoPilot"/>
+    </RootNode>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

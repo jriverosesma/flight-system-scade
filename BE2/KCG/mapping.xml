@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/config.txt
+** Generation date: 2020-12-08T12:13:03
+*************************************************************$-->
+<mapping>
+  <config>
+    <option name="use_types" value="#off#"/>
+    <option name="imported_root_package" value="#off#"/>
+    <option name="root_package" value="#off#"/>
+    <option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <option name="state_vector" value="#off#"/>
+    <option name="static" value="#off#"/>
+    <option name="separate_io_all" value="#off#"/>
+    <option name="no_separate_io" value="#off#"/>
+    <option name="separate_io" value="#off#"/>
+    <option name="warn_error" value="#off#"/>
+    <option name="short_circuit" value="#off#"/>
+    <option name="wrap_c_ops" value="#off#"/>
+    <option name="input_file" value="C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG/scade_model_without_unused.scade"/>
+    <option name="probes" value="#off#"/>
+    <option name="debug" value="#off#"/>
+    <option name="no_observe" value="#off#"/>
+    <option name="observe" value="#off#"/>
+    <option name="user_config" value="./user_macros.h"/>
+    <option name="input_threshold" value="#off#"/>
+    <option name="header" value="#off#"/>
+    <option name="significance_length" value="31"/>
+    <option name="name_length" value="200"/>
+    <option name="globals_prefix" value="#off#"/>
+    <option name="keep_asserts" value="#off#"/>
+    <option name="global_root_context" value="#off#"/>
+    <option name="expall" value="#off#"/>
+    <option name="noexp" value="#off#"/>
+    <option name="exp" value="#off#"/>
+    <option name="target_dir" value="C:/Users/Usuario/SCADE/SCADE TP_2/BE2/KCG"/>
+    <option name="target" value="C"/>
+    <option name="root" value="AutoPilot"/>
+    <option name="auth" value="#off#"/>
+  </config>
+  <model>
+    <predefType id="1" name="bool"/>
+    <predefType id="2" name="char"/>
+    <predefType id="3" name="int8"/>
+    <predefType id="4" name="int16"/>
+    <predefType id="5" name="int32"/>
+    <predefType id="6" name="int64"/>
+    <predefType id="7" name="uint8"/>
+    <predefType id="8" name="uint16"/>
+    <predefType id="9" name="uint32"/>
+    <predefType id="10" name="uint64"/>
+    <predefType id="11" name="float32"/>
+    <predefType id="12" name="float64"/>
+    <predefType id="13" name="size"/>
+    <constant id="14" name="stickPointClimb" imported="false" type="11"/>
+    <constant id="15" name="stickPoinCruising" imported="false" type="11"/>
+    <constant id="16" name="stickPointDescent" imported="false" type="11"/>
+    <constant id="17" name="climbUpperThreshold" imported="false" type="11"/>
+    <constant id="18" name="descentLowerThreshold" imported="false" type="11"/>
+    <constant id="19" name="crusingLowerThreshold" imported="false" type="11"/>
+    <constant id="20" name="cruisingUpperThreshold" imported="false" type="11"/>
+    <operator id="21" name="AutoPilot" imported="false" root="true" expanded="false">
+      <input id="22" name="altitude" clock="false" type="11"/>
+      <input id="23" name="automacticPilot" clock="false" type="1"/>
+      <input id="24" name="stickPoint" clock="false" type="11"/>
+      <output id="25" name="stickSetPoint" clock="false" type="11"/>
+      <automaton id="26" name="SM1">
+        <state id="27" name="Climb" initial="false" final="false" default="false">
+          <fork id="28" name="1" kind="strong">
+            <transition id="29" dest="44"/>
+          </fork>
+          <fork id="30" name="2" kind="strong">
+            <transition id="31" dest="32"/>
+          </fork>
+        </state>
+        <state id="32" name="Cruising" initial="false" final="false" default="false">
+          <fork id="33" name="1" kind="strong">
+            <transition id="34" dest="44"/>
+          </fork>
+          <fork id="35" name="2" kind="strong">
+            <transition id="36" dest="39"/>
+          </fork>
+          <fork id="37" name="3" kind="strong">
+            <transition id="38" dest="27"/>
+          </fork>
+        </state>
+        <state id="39" name="Descent" initial="false" final="false" default="false">
+          <fork id="40" name="1" kind="strong">
+            <transition id="41" dest="44"/>
+          </fork>
+          <fork id="42" name="2" kind="strong">
+            <transition id="43" dest="32"/>
+          </fork>
+        </state>
+        <state id="44" name="AutoPilotOff" initial="true" final="false" default="false">
+          <fork id="45" name="1" kind="strong">
+            <transition id="46" dest="27"/>
+          </fork>
+          <fork id="47" name="2" kind="strong">
+            <transition id="48" dest="32"/>
+          </fork>
+          <fork id="49" name="3" kind="strong">
+            <transition id="50" dest="39"/>
+          </fork>
+        </state>
+      </automaton>
+    </operator>
+  </model>
+  <generated>
+    <c>
+      <file id="51" name="AutoPilot.h">
+        <function id="52" name="AutoPilot_init">
+          <parameter id="53" name="outC" type="59" pointer="true"/>
+        </function>
+        <function id="54" name="AutoPilot_reset">
+          <parameter id="55" name="outC" type="59" pointer="true"/>
+        </function>
+        <function id="56" name="AutoPilot">
+          <parameter id="57" name="inC" type="62" pointer="true"/>
+          <parameter id="58" name="outC" type="59" pointer="true"/>
+        </function>
+        <struct id="59" name="outC_AutoPilot">
+          <field id="60" name="stickSetPoint" type="117" pointer="false"/>
+          <field id="61" name="SM1_state_nxt" type="67" pointer="false"/>
+        </struct>
+        <struct id="62" name="inC_AutoPilot">
+          <field id="63" name="altitude" type="117" pointer="false"/>
+          <field id="64" name="automacticPilot" type="118" pointer="false"/>
+          <field id="65" name="stickPoint" type="117" pointer="false"/>
+        </struct>
+      </file>
+      <file id="66" name="kcg_types.h">
+        <enum id="67" name="SSM_ST_SM1" tagName="kcg_tag_SSM_ST_SM1">
+          <value id="68" name="SSM_st_Climb_SM1"/>
+          <value id="69" name="SSM_st_Cruising_SM1"/>
+          <value id="70" name="SSM_st_Descent_SM1"/>
+          <value id="71" name="SSM_st_AutoPilotOff_SM1"/>
+        </enum>
+        <enum id="72" name="SSM_TR_SM1" tagName="kcg_tag_SSM_TR_SM1">
+          <value id="73" name="SSM_TR_no_trans_SM1"/>
+          <value id="74" name="SSM_TR_Climb_AutoPilotOff_1_Climb_SM1"/>
+          <value id="75" name="SSM_TR_Climb_Cruising_2_Climb_SM1"/>
+          <value id="76" name="SSM_TR_Cruising_AutoPilotOff_1_Cruising_SM1"/>
+          <value id="77" name="SSM_TR_Cruising_Descent_2_Cruising_SM1"/>
+          <value id="78" name="SSM_TR_Cruising_Climb_3_Cruising_SM1"/>
+          <value id="79" name="SSM_TR_Descent_AutoPilotOff_1_Descent_SM1"/>
+          <value id="80" name="SSM_TR_Descent_Cruising_2_Descent_SM1"/>
+          <value id="81" name="SSM_TR_AutoPilotOff_Climb_1_AutoPilotOff_SM1"/>
+          <value id="82" name="SSM_TR_AutoPilotOff_Cruising_2_AutoPilotOff_SM1"/>
+          <value id="83" name="SSM_TR_AutoPilotOff_Descent_3_AutoPilotOff_SM1"/>
+        </enum>
+        <macro id="84" name="kcg_assign_array"/>
+        <macro id="85" name="kcg_assign_struct"/>
+        <macro id="86" name="kcg_lnot_uint8"/>
+        <macro id="87" name="kcg_lnot_uint16"/>
+        <macro id="88" name="kcg_lnot_uint32"/>
+        <macro id="89" name="kcg_lnot_uint64"/>
+        <macro id="90" name="kcg_lsl_uint8"/>
+        <macro id="91" name="kcg_lsl_uint16"/>
+        <macro id="92" name="kcg_lsl_uint32"/>
+        <macro id="93" name="kcg_lsl_uint64"/>
+        <macro id="94" name="kcg_true"/>
+        <macro id="95" name="kcg_false"/>
+        <macro id="96" name="kcg_lit_int8"/>
+        <macro id="97" name="kcg_lit_int16"/>
+        <macro id="98" name="kcg_lit_int32"/>
+        <macro id="99" name="kcg_lit_int64"/>
+        <macro id="100" name="kcg_lit_uint8"/>
+        <macro id="101" name="kcg_lit_uint16"/>
+        <macro id="102" name="kcg_lit_uint32"/>
+        <macro id="103" name="kcg_lit_uint64"/>
+        <macro id="104" name="kcg_lit_size"/>
+        <macro id="105" name="kcg_lit_float64"/>
+        <macro id="106" name="kcg_lit_float32"/>
+        <predefType id="107" name="kcg_int8"/>
+        <predefType id="108" name="kcg_int16"/>
+        <predefType id="109" name="kcg_int32"/>
+        <predefType id="110" name="kcg_int64"/>
+        <predefType id="111" name="kcg_uint8"/>
+        <predefType id="112" name="kcg_uint16"/>
+        <predefType id="113" name="kcg_uint32"/>
+        <predefType id="114" name="kcg_uint64"/>
+        <predefType id="115" name="kcg_size"/>
+        <predefType id="116" name="kcg_float64"/>
+        <predefType id="117" name="kcg_float32"/>
+        <predefType id="118" name="kcg_bool"/>
+        <predefType id="119" name="kcg_char"/>
+        <macro id="120" name="KCG_MAPW_CPY"/>
+      </file>
+      <file id="121" name="kcg_consts.h">
+        <macro id="122" name="stickPointClimb" type="117"/>
+        <macro id="123" name="stickPoinCruising" type="117"/>
+        <macro id="124" name="stickPointDescent" type="117"/>
+        <macro id="125" name="climbUpperThreshold" type="117"/>
+        <macro id="126" name="descentLowerThreshold" type="117"/>
+        <macro id="127" name="crusingLowerThreshold" type="117"/>
+        <macro id="128" name="cruisingUpperThreshold" type="117"/>
+      </file>
+      <file id="129" name="kcg_sensors.h"/>
+    </c>
+    <map srcId="116" dstId="105" role="wrapped-lit"/>
+    <map srcId="117" dstId="106" role="wrapped-lit"/>
+    <map srcId="115" dstId="104" role="wrapped-lit"/>
+    <map srcId="114" dstId="103" role="wrapped-lit"/>
+    <map srcId="114" dstId="89" role="wrapped-lnot"/>
+    <map srcId="114" dstId="93" role="wrapped-lsl"/>
+    <map srcId="113" dstId="102" role="wrapped-lit"/>
+    <map srcId="113" dstId="88" role="wrapped-lnot"/>
+    <map srcId="113" dstId="92" role="wrapped-lsl"/>
+    <map srcId="112" dstId="101" role="wrapped-lit"/>
+    <map srcId="112" dstId="87" role="wrapped-lnot"/>
+    <map srcId="112" dstId="91" role="wrapped-lsl"/>
+    <map srcId="111" dstId="100" role="wrapped-lit"/>
+    <map srcId="111" dstId="86" role="wrapped-lnot"/>
+    <map srcId="111" dstId="90" role="wrapped-lsl"/>
+    <map srcId="110" dstId="99" role="wrapped-lit"/>
+    <map srcId="109" dstId="98" role="wrapped-lit"/>
+    <map srcId="108" dstId="97" role="wrapped-lit"/>
+    <map srcId="107" dstId="96" role="wrapped-lit"/>
+  </generated>
+  <map modelId="50" generatedId="83"/>
+  <map modelId="48" generatedId="82"/>
+  <map modelId="46" generatedId="81"/>
+  <map modelId="43" generatedId="80"/>
+  <map modelId="41" generatedId="79"/>
+  <map modelId="38" generatedId="78"/>
+  <map modelId="36" generatedId="77"/>
+  <map modelId="34" generatedId="76"/>
+  <map modelId="31" generatedId="75"/>
+  <map modelId="29" generatedId="74"/>
+  <map modelId="26" generatedId="73" role="autom-no-trans-enum"/>
+  <map modelId="44" generatedId="71"/>
+  <map modelId="39" generatedId="70"/>
+  <map modelId="32" generatedId="69"/>
+  <map modelId="27" generatedId="68"/>
+  <map modelId="21" generatedId="53" role="context-parameter"/>
+  <map modelId="21" generatedId="52" role="init-method"/>
+  <map modelId="21" generatedId="55" role="context-parameter"/>
+  <map modelId="21" generatedId="54" role="reset-method"/>
+  <map modelId="21" generatedId="57" role="input-struct-parameter"/>
+  <map modelId="24" generatedId="65"/>
+  <map modelId="23" generatedId="64"/>
+  <map modelId="22" generatedId="63"/>
+  <map modelId="21" generatedId="62" role="input-struct-type"/>
+  <map modelId="21" generatedId="58" role="context-parameter"/>
+  <map modelId="26" generatedId="61" role="autom-next-state"/>
+  <map modelId="25" generatedId="60"/>
+  <map modelId="21" generatedId="59" role="context-type"/>
+  <map modelId="21" generatedId="51" role="interface-file"/>
+  <map modelId="21" generatedId="56" role="cycle-method"/>
+  <map modelId="20" generatedId="128"/>
+  <map modelId="19" generatedId="127"/>
+  <map modelId="18" generatedId="126"/>
+  <map modelId="17" generatedId="125"/>
+  <map modelId="16" generatedId="124"/>
+  <map modelId="15" generatedId="123"/>
+  <map modelId="14" generatedId="122"/>
+  <map modelId="26" generatedId="72" role="autom-transitions-type"/>
+  <map modelId="26" generatedId="67" role="autom-states-type"/>
+  <map modelId="2" generatedId="119"/>
+  <map modelId="1" generatedId="118"/>
+  <map modelId="12" generatedId="116"/>
+  <map modelId="11" generatedId="117"/>
+  <map modelId="13" generatedId="115"/>
+  <map modelId="10" generatedId="114"/>
+  <map modelId="9" generatedId="113"/>
+  <map modelId="8" generatedId="112"/>
+  <map modelId="7" generatedId="111"/>
+  <map modelId="6" generatedId="110"/>
+  <map modelId="5" generatedId="109"/>
+  <map modelId="4" generatedId="108"/>
+  <map modelId="3" generatedId="107"/>
+</mapping>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** mapping.xml
+** Generation date: 2020-12-08T12:13:03
+*************************************************************$-->

@@ -1,0 +1,38 @@
+$**************  SCADETOC Version 2019 R1 (build 20181212) **************
+** Generation date: 2020-12-08T12:12:56
+** Command: scade -code "C:\Users\Usuario\SCADE\SCADE TP_2\BE2\BE2.etp" -root AutoPilot -conf KCG
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\AutoPilot.c, line 0, character 0
+ ~AutoPilot.c
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\AutoPilot.h, line 0, character 0
+ ~AutoPilot.h
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file C:\Users\Usuario\SCADE\SCADE TP_2\BE2\KCG\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+$**************  SCADETOC Version 2019 R1 (build 20181212) **************
+** Generation date: 2020-12-08T12:13:06
+** sc2c.log
+*************************************************************$
