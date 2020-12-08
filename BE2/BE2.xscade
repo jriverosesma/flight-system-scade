@@ -120,5 +120,52 @@
 				</ed:Constant>
 			</pragmas>
 		</Constant>
+		<Constant name="stallingIncidenceThreshold">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/13219/6E39/32D0/5fcf620574b0" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6">
+					<comment>[deg]</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="altitudeCrashingThreshold">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="300"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/1325c/6E39/32D0/5fcf63ee2c3a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="verticalSpeedDescentThreshold">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="100"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/13273/6E39/32D0/5fcf64cc5d40"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>
