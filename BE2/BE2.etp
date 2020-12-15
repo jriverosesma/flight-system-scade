@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="107" defaultConfiguration="24">
+<Project id="1" oid_count="113" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -418,6 +418,12 @@
 				<FileRef id="100" persistAs="Operator2.xscade"/>
 				<FileRef id="104" persistAs="BE2.xscade"/>
 				<FileRef id="107" persistAs="Operator3.xscade"/>
+				<FileRef id="108" persistAs="Operator4.xscade"/>
+				<FileRef id="109" persistAs="Operator5.xscade"/>
+				<FileRef id="110" persistAs="Operator6.xscade"/>
+				<FileRef id="111" persistAs="Operator7.xscade"/>
+				<FileRef id="112" persistAs="Operator8.xscade"/>
+				<FileRef id="113" persistAs="Operator9.xscade"/>
 			</elements>
 		</Folder>
 		<Folder id="96" name="display">
