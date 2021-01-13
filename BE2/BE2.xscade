@@ -163,7 +163,7 @@
 				</NamedType>
 			</type>
 			<value>
-				<ConstValue value="100"/>
+				<ConstValue value="-100"/>
 			</value>
 			<pragmas>
 				<ed:Constant oid="!ed/13273/6E39/32D0/5fcf64cc5d40" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/6">
